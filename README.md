@@ -2,8 +2,10 @@
 
 1. Using this link, please create a sample JSON payload to record a new user with at least 1 custom attribute, 1 custom event, and 1 purchase. For this exercise, please provide the endpoint you used, as well as the body of the payload, there is no need for you to provide any header or API Key information.
 
+Assuming the new user has already been identified
+
 Endpoint --> https://rest.iad-01.braze.com/users/track
-becase you should "Use this [/user/track] the *POST* method on the /users/track endpoint Use this endpoint to record Custom events, Purchases, and update user profile attributes."
+becase you should Use the **POST** method on the /users/track endpoint Use this endpoint to record Custom events, Purchases, and update user profile attributes."
 
 Braze automatically creates a new user profile if the **external_id** does not exist and there is no **_update_existing_only** key with a value of **true**
 
@@ -11,38 +13,33 @@ Braze automatically creates a new user profile if the **external_id** does not e
 {
 	"attributes": [ 
  	{
- 	  "external_id":"user_id",
-      "string_attribute": "sherman",
-      "boolean_attribute_1": true,
-      "integer_attribute": 25,
-      "array_attribute": ["banana", "apple"]
+ 	  "external_id": "user_id",
+      "first_name": "Cole",
+      "age": 26
     }
     ],
     "events": [
     {
       "external_id": "user_id",
-      "app_id" : "app_identifier",
-      "name": "watched_trailer",
-      "time": "2013-07-16T19:20:30+1:00"
+      "app_id" : "11ae5b4b-2445-4440-a04f-bf537764c9ad",
+      "name": "bought_car",
+      "time": "2019-11-14T13:50:10+1:00"
     }  
    ],
   "purchases": [
      {
       "external_id": "user_id",
-      "app_id": "app_identifier",
-      "product_id": "product_name",
+      "app_id": "11ae5b4b-2445-4440-a04f-bf537764c9ad",
+      "product_id": "Tesla",
       "currency": "USD",
-      "price": 12.12,
-      "quantity": 6,
-      "time": "2017-05-12T18:47:12Z",
+      "price": 12000.00,
+      "time": "2019-11-14T13:50:10+1:00",
       "properties": {
-         "integer_property": 3,
-         "string_property": "Russell",
-         "date_property": "2014-02-02T00:00:00Z"
+         "year": 2019,
+         "model": "Y"
        } 
      }
-  ],
-  "partner": "partner1"
+  ]
 }
 ```
 
