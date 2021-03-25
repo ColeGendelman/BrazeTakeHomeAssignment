@@ -5,6 +5,8 @@
 Endpoint --> https://rest.iad-01.braze.com/users/track
 becase you should "Use this [/user/track] the *POST* method on the /users/track endpoint Use this endpoint to record Custom events, Purchases, and update user profile attributes."
 
+Braze automatically creates a new user profile if the **external_id** does not exist and there is no **_update_existing_only** key with a value of **true**
+
 ```json 
 {
 	"attributes": [ 
