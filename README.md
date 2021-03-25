@@ -5,7 +5,7 @@
 Assuming the new user has already been identified
 
 Endpoint --> https://rest.iad-01.braze.com/users/track
-becase you should Use the **POST** method on the /users/track endpoint Use this endpoint to record Custom events, Purchases, and update user profile attributes."
+becase you should use the **POST** method on the /users/track endpoint "to record Custom events, Purchases, and update user profile attributes."
 
 Braze automatically creates a new user profile if the **external_id** does not exist and there is no **_update_existing_only** key with a value of **true**
 
@@ -45,11 +45,20 @@ Braze automatically creates a new user profile if the **external_id** does not e
 
 2. Please explain the similarities and differences of collecting data with an SDK rather than an API.
   
-  | *SIMILARITIES*  | *DIFFERENCES* | 
-  | -------------- | ------------- |
-  |                 |               |
+  > SDK's usually contain one (or more) API and make it easier to call APIs in your code. 
+  > An API call is used for a specific task/feature and utilizes existing functions and sources.
+  > An SDK defines a function and creates a way to call the source and function.
+  > For an API call you would need to include an operation
+  > Both SDK's and API's have parameters you can use as well as different languages to call the endpoint.  
   
 
 
 3. Write a script in a programming language of your choice that uses a loop and a conditional statement to find the value of the number of dogs in the following collection of key-value pairs. Depending on what language you’re using, it is acceptable to think of this variable as either a dictionary or an array of key-value pairs. Please only use logic that is native to the language without any external libraries:
 KennelCapacity = {cats: 7, hamsters: 12, birds: 21, dogs: 3, chickens: 1}
+
+In Python, using a dictionary
+```python
+for x,y in KennelCapacity.items():
+  if x == "dogs":
+    print (y)
+```
