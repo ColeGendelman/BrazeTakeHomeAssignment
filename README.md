@@ -6,10 +6,11 @@ Endpoint --> https://rest.iad-01.braze.com/users/track
 becase you should "Use this [/user/track] the *POST* method on the /users/track endpoint Use this endpoint to record Custom events, Purchases, and update user profile attributes."
 
 ```json 
-"attributes": [ 
+{
+	"attributes": [ 
  	{
  	  "external_id":"user_id",
-      "string_attribute": "Cole",
+      "string_attribute": "sherman",
       "boolean_attribute_1": true,
       "integer_attribute": 25,
       "array_attribute": ["banana", "apple"]
@@ -29,7 +30,7 @@ becase you should "Use this [/user/track] the *POST* method on the /users/track 
       "app_id": "app_identifier",
       "product_id": "product_name",
       "currency": "USD",
-      "price": 149.99,
+      "price": 12.12,
       "quantity": 6,
       "time": "2017-05-12T18:47:12Z",
       "properties": {
@@ -39,6 +40,8 @@ becase you should "Use this [/user/track] the *POST* method on the /users/track 
        } 
      }
   ],
+  "partner": "partner1"
+}
 ```
 
 2. Please explain the similarities and differences of collecting data with an SDK rather than an API.
