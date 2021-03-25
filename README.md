@@ -9,7 +9,7 @@ becase you should "Use this [/user/track] the *POST* method on the /users/track 
 "attributes": [ 
  	{
  	  "external_id":"user_id",
-      "string_attribute": "sherman",
+      "string_attribute": "Cole",
       "boolean_attribute_1": true,
       "integer_attribute": 25,
       "array_attribute": ["banana", "apple"]
@@ -29,7 +29,7 @@ becase you should "Use this [/user/track] the *POST* method on the /users/track 
       "app_id": "app_identifier",
       "product_id": "product_name",
       "currency": "USD",
-      "price": 12.12,
+      "price": 149.99,
       "quantity": 6,
       "time": "2017-05-12T18:47:12Z",
       "properties": {
@@ -39,8 +39,6 @@ becase you should "Use this [/user/track] the *POST* method on the /users/track 
        } 
      }
   ],
-  "partner": "partner1"
-}'
 ```
 
 2. Please explain the similarities and differences of collecting data with an SDK rather than an API.
