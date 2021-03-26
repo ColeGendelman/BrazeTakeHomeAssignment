@@ -9,7 +9,7 @@ becase you should use the **POST** method on the /users/track endpoint "to recor
 
 Braze automatically creates a new user profile if the **external_id** does not exist and there is no **_update_existing_only** key with a value of **true**
 
-```json 
+```json
 {
 	"attributes": [ 
  	{
@@ -48,7 +48,7 @@ Braze automatically creates a new user profile if the **external_id** does not e
   > SDK's usually contain one (or more) API and make it easier to call APIs in your code. 
   > An API call is used for a specific task/feature and utilizes existing functions and sources.
   > An SDK defines a function and creates a way to call the source and function.
-  > For an API call you would need to include an operation
+  > For an API call you would need to include an operation.
   > Both SDK's and API's have parameters you can use as well as different languages to call the endpoint.  
   
 
